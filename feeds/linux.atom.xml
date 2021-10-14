@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deson Alleyne - linux</title><link href="http://0.0.0.0:8000/" rel="alternate"></link><link href="http://0.0.0.0:8000/feeds/linux.atom.xml" rel="self"></link><id>http://0.0.0.0:8000/</id><updated>2021-09-30T00:00:00-04:00</updated><subtitle>I'm Deson, a human from Guyana who loves programming,        electronics and musical instruments.</subtitle><entry><title>Top Linux commands every Linux user should know</title><link href="http://0.0.0.0:8000/top-commands-every-linux-user-should-know.html" rel="alternate"></link><published>2021-09-30T00:00:00-04:00</published><updated>2021-09-30T00:00:00-04:00</updated><author><name>Deson Alleyne</name></author><id>tag:0.0.0.0,2021-09-30:/top-commands-every-linux-user-should-know.html</id><summary type="html">&lt;p class="first last"&gt;A list of linux commands&lt;/p&gt;
+</summary><content type="html">&lt;img alt="alternateText" src="/images/dima-pechurin-720X0NsgvfI-unsplash.jpg" /&gt;
+&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@pechka?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Dima Pechurin&lt;/a&gt; on &lt;a href="/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;p&gt;I grew up using Windows operating systems (Windows 98, 2000, XP, Vista, 7 etc.) but eventually started exploring the Linux world to see if it was really as cool as everyone made it sound. Guess what? It IS!&lt;/p&gt;
+&lt;p&gt;Linux operating systems (called distributions) are generally &lt;strong&gt;lightweight&lt;/strong&gt;  (requires less hardware resources), &lt;strong&gt;more stable&lt;/strong&gt; (more resilient to errors), &lt;strong&gt;highly customizable&lt;/strong&gt; (you can tweak appearance and behaviour), and most importantly, &lt;strong&gt;open-source&lt;/strong&gt; (programmers around the world collaborate to build free software for Linux OSes). These benefits make Linux based OSes such as Ubuntu, CentOS, Elementary OS, Debian and Rasbian more suited for those who desire more control over their machine. While there are some drawbacks of using a Linux OS, I've come to appreciate (and enjoy) the near super-power abilities Linux offers.&lt;/p&gt;
+&lt;p&gt;Linux commands are essentially programs you can execute in the terminal to perform a task, and arguments allow you to enable/disable features provided by these programs.
+To illustrate, you can think of the tools an artist uses; (brushes) as &lt;em&gt;commands&lt;/em&gt; and the different paint colours as the &lt;em&gt;arguments&lt;/em&gt;. To create a beautiful masterpiece (the task), the artist will use different sizes of paintbrushes (commands) along with different colours of paint (arguments).&lt;/p&gt;
+&lt;p&gt;If you're new to Linux, using the terminal may seem intimidating at first but once you understand the general concept of how to use commands, you'll be on your way to claiming your &lt;strong&gt;Linux terminal superpowers&lt;/strong&gt;. This post outlines some of the most common commands you'll encounter in the Linux environment. Have fun using them!&lt;/p&gt;
+&lt;div class="section" id="man-help"&gt;
+&lt;h2&gt;1.  man / help&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;man&lt;/strong&gt; (as in user manual) and &lt;strong&gt;help&lt;/strong&gt; commands are probably the first two commands any Linux developer should know. The &lt;strong&gt;man&lt;/strong&gt; command provides description and usage details of virtually any command/application you can execute in the terminal. The help command is similar but provides a more concise information on the command. These two commands are called in slightly different ways.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;man&lt;/strong&gt;, preceeds the command or application you're looking up:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+man &amp;lt;command&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ man ls
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can navigate the manual using &lt;tt class="docutils literal"&gt;j&lt;/tt&gt; (scroll down) and &lt;tt class="docutils literal"&gt;k&lt;/tt&gt; (scroll up) or &lt;tt class="docutils literal"&gt;d&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;u&lt;/tt&gt; for scrolling half page downward and upward respectively. To quit the manual, press &lt;tt class="docutils literal"&gt;q&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;--help&lt;/strong&gt; follows the command you'd like help on:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;command&amp;gt; --help
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt; (&lt;em&gt;help&lt;/em&gt; on the &lt;em&gt;ls&lt;/em&gt; command)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ls --help
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This gives a brief (but often sufficient) indication of the arguments a command allow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ls"&gt;
+&lt;h2&gt;2. ls&lt;/h2&gt;
+&lt;p&gt;Unless you've got really good photographic memory and remember where every file and folder is, you'll need the &lt;strong&gt;ls&lt;/strong&gt; command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.&lt;/p&gt;
+&lt;p&gt;To demonstrate the usefulness of this command, I'll perform it in my &lt;tt class="docutils literal"&gt;demo&lt;/tt&gt; directory.&lt;/p&gt;
+&lt;p&gt;Here's the &lt;tt class="docutils literal"&gt;demo&lt;/tt&gt; folder structure:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+../demo/
+├── days.txt
+└── names.txt
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ls
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;days.txt  names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This command has a host of possible arguments you can specify to determine how the results are displayed.&lt;/p&gt;
+&lt;p&gt;My favourite arguments are:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ls -lrth
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;total &lt;span class="m"&gt;8&lt;/span&gt;.0K
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; pi pi &lt;span class="m"&gt;176&lt;/span&gt; Feb &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;19&lt;/span&gt;:27 names.txt
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; pi pi  &lt;span class="m"&gt;57&lt;/span&gt; Feb &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;19&lt;/span&gt;:52 days.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(Try using &lt;strong&gt;--help&lt;/strong&gt; on the &lt;strong&gt;ls&lt;/strong&gt; command to see available arguments)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="grep"&gt;
+&lt;h2&gt;3. grep&lt;/h2&gt;
+&lt;p&gt;This is probably one of most commonly used commands. Simply put, &lt;strong&gt;grep&lt;/strong&gt; allows you to search. The cool thing is flexibility that the command provides via its arguments and options, and the fact that the search can be applied to virtually anything in the terminal.&lt;/p&gt;
+&lt;p&gt;Lets say you wanted to search for all lines in a file containing the word 'Guyana'.&lt;/p&gt;
+&lt;p&gt;You can achieve this by 'grepping' the file for the pattern 'Guyana'.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ grep Guyana name.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that this command doesn't just apply to files. [[ADD MORE WAYS HERE]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="less"&gt;
+&lt;h2&gt;4. less&lt;/h2&gt;
+&lt;p&gt;This command allows us to view contents of a file, or output from a command in a pager (a scrollable view). It is very useful for reading files with hundreds of lines (eg log file for an application) and even has built-in searching capability.
+The examples below demonstrate how to view contents of a file, and output of another command with the less command. Note: press the 'q' key to quit the pager and return to the terminal.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ less names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+names.txt &lt;span class="o"&gt;(&lt;/span&gt;END&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;grep with less
+&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep Guyana names &lt;span class="p"&gt;|&lt;/span&gt; less
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cat"&gt;
+&lt;h2&gt;5. cat&lt;/h2&gt;
+&lt;p&gt;The cat command conCATenates files together and prints the results to standard output (your screen). In other words, if you needed to merge the contents of files, the cat command can do this. Since this command prints the content to standard output, I often use it when I quickly need to see what's in a file or to join files.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# girls.txt&lt;/span&gt;
+
+Jane
+Mary
+
+
+&lt;span class="c1"&gt;# boys.txt&lt;/span&gt;
+
+John
+Mark
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat girls.txt boys.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Jane
+Mary
+John
+Mark
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Bonus tip: you can write the resulting output of this command to a file using the redirect command &lt;strong&gt;&amp;gt;&lt;/strong&gt;. This redirects the output from our cat command into a file, allnames.txt.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat girls.txt boys.txt &amp;gt; allnames.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cut"&gt;
+&lt;h2&gt;6. cut&lt;/h2&gt;
+&lt;p&gt;This command does exactly it sounds like. It cuts the specified segment of each line in the file. Segments can be specified positionally i.e. from 5th character to 10 character, or by delimiters (a specified character). As with all the other commands, the --help flag and the manual are your friends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;
+If you want to segment the file by a delimiter, use the -d flag and specify the delimiter. You'll also need to specify which fields should be returned using the -f argument and the segment(s) you want returnede.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To split the file into segments delimited by a , (comma) and return the 2nd field (countries), we can do the following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cut -d &lt;span class="s1"&gt;&amp;#39;,&amp;#39;&lt;/span&gt; -f &lt;span class="m"&gt;2&lt;/span&gt; names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Country
+Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Guyana
+Guyana
+Jamaica
+Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To split the file based on number of characters, we can use the -c argument and specify the position of the character(s) we want returned:
+&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cut -c &lt;span class="m"&gt;1&lt;/span&gt;-5 names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Name,
+Brian
+Shivn
+Ramna
+Chris
+Darre
+Chris
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What commands would you use to get the first name of each cricketer?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="head-and-tail"&gt;
+&lt;h2&gt;7. head and tail&lt;/h2&gt;
+&lt;p&gt;No, we're not flipping a coin here. These two commands print content at the the top (head) or bottom (tail) of a file to screen. They come in very handy when I need to peek at a few lines in a file. By default they both show 10 lines, but you can change this behaviour using the arguments available.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we wanted the first 3 lines in a file, we can do:
+&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ head -n &lt;span class="m"&gt;3&lt;/span&gt; names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Conversely, if we wanted the last 2 lines we can do:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ tail -n &lt;span class="m"&gt;2&lt;/span&gt; names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="alias"&gt;
+&lt;h2&gt;8. alias&lt;/h2&gt;
+&lt;p&gt;The alias command makes you do magic with less keystrokes! This command essentially allows you define a shortcut/a literal alias for any command/s. Think of it as a tinyurl for commands. Lets say your terminal had a magical command named thisisanimaginarycommandthatdoesmagic. Typing this command every time would eventually get boring and possibly annoying. Also, that's about 100 keystrokes. To spice up your terminal, you can create an alias for this command and call the alias in the terminal instead.&lt;/p&gt;
+&lt;p&gt;Note: aliases created in this manner are temporary and only exist for this terminal session.
+I'll share steps on making these permanent in another post.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Creating an alias to echo a sentence to the screen&lt;/span&gt;
+&lt;span class="c1"&gt;# Note NO spaces between the = (equal) sign&lt;/span&gt;
+$ &lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;doMagic&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;echo &amp;quot;This Is An Imaginary Command That Does Magic&amp;quot;&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# using an alias&lt;/span&gt;
+$ doMagic
+This Is An Imaginary Command That Does Magic
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Whenever I call the &lt;cite&gt;doMagic&lt;/cite&gt; alias, whatever is on the right hand side of the = (equal) sign is executed. In this case, it echoes &amp;quot;This Is An Imaginary Command That Does Magic&amp;quot; to the screen.&lt;/p&gt;
+&lt;p&gt;It might seem trivial but if used smartly, this command &lt;strong&gt;WILL&lt;/strong&gt; save you tons of time and keystrokes!&lt;/p&gt;
+&lt;p&gt;Here's one of my favourite aliases using the &lt;cite&gt;ls&lt;/cite&gt; command. Try it out to see what it does:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# set ls command to display more details&lt;/span&gt;
+$ &lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;ls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls -lrth&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="history"&gt;
+&lt;h2&gt;9. history&lt;/h2&gt;
+&lt;p&gt;The history command displays a history of all the commands you've entered in the terminal.
+This command is especially useful when you're too lazy to retype a command you used in the past, or you want to see the timestamp you executed a particular command.&lt;/p&gt;
+&lt;p&gt;By default, timestamp is not included in the results. Add the following line to your ~/.bashrc file to enable timestamps in the history command. You can add as many aliases to your ~/.bashrc file but you'll need to source it for any changes to apply.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HISTTIMEFORMAT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;%F %T&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then execute the following in your terminal to apply the changes:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Here are the most recent commands I executed in my terminal&lt;/span&gt;
+$ &lt;span class="nb"&gt;history&lt;/span&gt;
+...
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="m"&gt;601&lt;/span&gt;  &lt;span class="m"&gt;2019&lt;/span&gt;-12-27 &lt;span class="m"&gt;21&lt;/span&gt;:13:54 ls -lrth
+&lt;span class="m"&gt;602&lt;/span&gt;  &lt;span class="m"&gt;2019&lt;/span&gt;-12-27 &lt;span class="m"&gt;21&lt;/span&gt;:13:58 &lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;span class="m"&gt;603&lt;/span&gt;  &lt;span class="m"&gt;2019&lt;/span&gt;-12-27 &lt;span class="m"&gt;21&lt;/span&gt;:13:59 &lt;span class="nb"&gt;pwd&lt;/span&gt;
+&lt;span class="m"&gt;604&lt;/span&gt;  &lt;span class="m"&gt;2019&lt;/span&gt;-12-27 &lt;span class="m"&gt;21&lt;/span&gt;:14:01 ls
+&lt;span class="m"&gt;605&lt;/span&gt;  &lt;span class="m"&gt;2019&lt;/span&gt;-12-27 &lt;span class="m"&gt;21&lt;/span&gt;:14:03 &lt;span class="nb"&gt;history&lt;/span&gt;
+&lt;span class="m"&gt;606&lt;/span&gt;  &lt;span class="m"&gt;2019&lt;/span&gt;-12-27 &lt;span class="m"&gt;21&lt;/span&gt;:14:14 &lt;span class="nb"&gt;fg&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="wc"&gt;
+&lt;h2&gt;10. wc&lt;/h2&gt;
+&lt;p&gt;This command counts characters, words, and lines in a file. This might come in handy if you're typing your 5000 word essay in the terminal and wondering if you hit the target.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# count number of lines in names.csv&lt;/span&gt;
+$ wc -l names.csv
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt; names.txt
+
+&lt;span class="c1"&gt;# count number of characters in names.csv&lt;/span&gt;
+$ wc -c names.csv
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="m"&gt;176&lt;/span&gt; names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="htop"&gt;
+&lt;h2&gt;11. htop&lt;/h2&gt;
+&lt;p&gt;If you're coming from a Windows background, you might be familiar with Windows Task Manager. I think of htop as the equivalent in Linux. This command launches an interactive process monitor that shows running processes and resource usage, and allows you to manage these processes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pipe-character"&gt;
+&lt;h2&gt;12. pipe character |&lt;/h2&gt;
+&lt;p&gt;The pipe character allows you to redirect output from one programm/command as input to another programm/command.&lt;/p&gt;
+&lt;p&gt;(usually on the same key as the character). This will give you the ability to 'chain' multiple commands. eg: grep + wc...search for a particular pattern then count the number of lines that matched.&lt;/p&gt;
+&lt;p&gt;Here is an example of the pipe character in action:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# search for Guyana in names.txt count number of lines using wc&lt;/span&gt;
+$ grep Guyana names.txt &lt;span class="p"&gt;|&lt;/span&gt; wc -l
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bg-fg-jobs"&gt;
+&lt;h2&gt;13. bg, fg, jobs&lt;/h2&gt;
+&lt;p&gt;These commands give you the ability to put processes (aka jobs) in the background (bg) or foreground (fg).
+Lets say you executed&lt;/p&gt;
+&lt;blockquote&gt;
+less names.txt&lt;/blockquote&gt;
+&lt;p&gt;but now you need to take a quick look at another file. You can move the &lt;cite&gt;less&lt;/cite&gt; process to the background using the key combination &lt;strong&gt;Ctrl + z&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After hitting the key combination you should see&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt; (bg)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ less names.txt
+&lt;span class="c1"&gt;# Ctrl + z pressed&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;+  Stopped                 less names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The number in square brackets [1] identifies the job id. You'll need this if you want to bring the job back to the foreground&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt; (fg)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;fg&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will bring the job with id &lt;strong&gt;1&lt;/strong&gt; to the foreground.&lt;/p&gt;
+&lt;p&gt;You can use the jobs command to see a list of jobs and their statuses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt; (jobs)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;jobs&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;-  Stopped                 less names.txt
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;+  Stopped                 less days.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a very small subset of the commands available to you in Linux. Which one do you think you'll use the most? Which ones you wish you knew before now? It's never too late to learn commands. Have fun!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="linux"></category><category term="linux"></category><category term="bash"></category><category term="terminal"></category><category term="commands"></category></entry></feed>
