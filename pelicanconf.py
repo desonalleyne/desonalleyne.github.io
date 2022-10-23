@@ -18,7 +18,7 @@ BROWSER_COLOR = "#f00"
 ROBOTS = "index, follow"
 
 PATH = "content"
-OUTPUT_PATH = "blog/"
+OUTPUT_PATH = "docs/"
 
 TIMEZONE = "America/Guyana"
 DEFAULT_LANG = 'en'
