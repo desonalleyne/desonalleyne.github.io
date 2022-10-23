@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deson's Blog - windows</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/windows.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2020-01-31T00:00:00-04:00</updated><subtitle>site subtitle</subtitle><entry><title>Command Promot commands every Windows programmers should know</title><link href="http://localhost:8000/13_commands_every_windows_programmer_should_know.html" rel="alternate"></link><published>2020-01-31T00:00:00-04:00</published><updated>2020-01-31T00:00:00-04:00</updated><author><name>Deson Alleyne</name></author><id>tag:localhost,2020-01-31:/13_commands_every_windows_programmer_should_know.html</id><summary type="html">&lt;p class="first last"&gt;A list of windows commands&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="man-help"&gt;
+&lt;h2&gt;1.  man / help&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;man&lt;/strong&gt; (manual) and &lt;strong&gt;help&lt;/strong&gt; commands are probably the first two commands any Linux developer should know. The &lt;strong&gt;man&lt;/strong&gt; command provides description and usage details of virtually any command/application you can execute in the terminal. The help command is similar but provides a more concise information on the command. These two commands are called in slightly different ways.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;man&lt;/strong&gt;, preceeds the command or application you're looking up:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+man &amp;lt;command&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;The &lt;strong&gt;--help&lt;/strong&gt; follows the command you'd like help on:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;command&amp;gt; --help
+&lt;/pre&gt;
+&lt;p&gt;Usage
+&lt;strong&gt;man&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ man ls
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can navigate the manual using &lt;tt class="docutils literal"&gt;j&lt;/tt&gt; (scroll down) and &lt;tt class="docutils literal"&gt;k&lt;/tt&gt; (scroll up) or &lt;tt class="docutils literal"&gt;d&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;u&lt;/tt&gt; for scrolling half page downward and upward respectively. To quit the manual, use &lt;tt class="docutils literal"&gt;q&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;help&lt;/strong&gt; on the &lt;tt class="docutils literal"&gt;ls&lt;/tt&gt; command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ls --help
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This gives a brief (but often sufficient) indication of the arguments a command allow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ls"&gt;
+&lt;h2&gt;2. ls&lt;/h2&gt;
+&lt;p&gt;Unless you've got really good photographic memory and remember where every file and folder is, you'll need the &lt;strong&gt;ls&lt;/strong&gt; command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.&lt;/p&gt;
+&lt;p&gt;To demonstrate the usefulness of this command, I'll perform it in my &lt;tt class="docutils literal"&gt;demo&lt;/tt&gt; directory.&lt;/p&gt;
+&lt;p&gt;Here's the &lt;tt class="docutils literal"&gt;demo&lt;/tt&gt; folder structure:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+../demo/
+├── days.txt
+└── names.txt
+&lt;/pre&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ls
+days.txt  names.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This command has a host of possible arguments you can specify to determine how the results are displayed.&lt;/p&gt;
+&lt;p&gt;My favourite arguments are:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ls -lrth
+total &lt;span class="m"&gt;8&lt;/span&gt;.0K
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; pi pi &lt;span class="m"&gt;176&lt;/span&gt; Feb &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;19&lt;/span&gt;:27 names.txt
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; pi pi  &lt;span class="m"&gt;57&lt;/span&gt; Feb &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;19&lt;/span&gt;:52 days.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(Try using &lt;strong&gt;--help&lt;/strong&gt; on the &lt;strong&gt;ls&lt;/strong&gt; command to see available arguments)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="grep"&gt;
+&lt;h2&gt;3. grep&lt;/h2&gt;
+&lt;p&gt;This is probably one of most commonly used commands. Simply put, &lt;strong&gt;grep&lt;/strong&gt; allows you to search. The cool thing is flexibility that the command provides via its arguments and options, and the fact that the search can be applied to virtually anything in the terminal.&lt;/p&gt;
+&lt;p&gt;Lets say you wanted to search for all lines in a file containing the word 'Guyana'.&lt;/p&gt;
+&lt;p&gt;You can achieve this by 'grepping' the file for the pattern 'Guyana'.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Usage:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ grep Guyana name.txt
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that this command doesn't just apply to files. [[ADD MORE WAYS HERE]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="less"&gt;
+&lt;h2&gt;4. less&lt;/h2&gt;
+&lt;p&gt;This command allows us to view contents of a file, or output from a command in a pager (a scrollable view). It is very useful for reading files with hundreds of lines (eg log file for an application) and even has built-in searching capability.
+The examples below demonstrate how to view contents of a file, and output of another command with the less command. Note: press the 'q' key to quit the pager and return to the terminal.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ less names.txt
+Name,Country
+Brian Lara,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; Tobago
+Christopher Barnwell,Guyana
+names.txt &lt;span class="o"&gt;(&lt;/span&gt;END&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;grep with less&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep Guyana names &lt;span class="p"&gt;|&lt;/span&gt; less
+&lt;/pre&gt;&lt;/div&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;less&lt;/li&gt;
+&lt;li&gt;cat&lt;/li&gt;
+&lt;li&gt;cut&lt;/li&gt;
+&lt;li&gt;alias&lt;/li&gt;
+&lt;li&gt;history&lt;/li&gt;
+&lt;li&gt;wc&lt;/li&gt;
+&lt;li&gt;sourcing .bashrc&lt;/li&gt;
+&lt;li&gt;htop&lt;/li&gt;
+&lt;li&gt;pipe&lt;/li&gt;
+&lt;li&gt;bg fg jobs&lt;/li&gt;
+&lt;li&gt;bc&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="windows"></category><category term="commands"></category></entry></feed>
