@@ -2,25 +2,55 @@ Page title
 ##########
 
 :date: 2020-01-31
+:date: 2022-01-01
 :tags: bash, terminal, commands,
 :category: linux
-:slug: 15_commands_every_linux_programmer_should_know
+:slug: commands_every_linux_programmer_must_know
 :author: Deson Alleyne
-:summary: A list of linux commands
-:title: Linux commands every Linux programmers should know
+:summary: Legend has it that using the terminal makes you a ninja 🥷 with superpowers. Here are Linux terminal commands every programmer must know.
+:title: Linux commands every Linux programmer must know
 :lang: en
 :status: published
 
-Introduction
-============
+.. role:: strike
+    :class: strike
 
-This is just an introduction
+.. |ss| raw:: html
+
+    <strike>
+
+.. |se| raw:: html
+
+    </strike>
+
+
+
+.. coment danger::
+   attention::
+   caution::
+   error:: 
+   hint::
+   note::
+   important::
+   tip::
+   warning::
+
+
+
+Legend has it that using the terminal makes you a ninja with superpowers. Although it might appear to be a boring black window with not much going on, once you know how to use the terminal enough, it suddenly becomes your go-to tool when performing [most] tasks. The terminal (rather than a GUI application) gives you several benefits including speed, efficiency and ease of automation. 
+
+Here are Linux terminal commands every |ss| programmer |se| user must know. 
+
+.. hint:: In this article text in **bold** refer to the actual command and blocks like the one below show the command being used in a terminal.
+
+.. code-block:: bash
+
+   $ typeCommandHere 
+
 
 .. image:: /images/dima-pechurin-720X0NsgvfI-unsplash.jpg
     :alt: alternateText
     :width: 100%
-
-
 
 .. raw:: html
 
@@ -63,13 +93,13 @@ This gives a brief (but often sufficient) indication of the arguments a command 
 2. ls
 =====
 
-Unless you've got really good photographic memory and remember where every file and folder is, you'll need the **ls** command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.
+Unless you've got really good photographic memory and can recall where every file and folder is, you'll need the **ls** command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.
 
 To demonstrate the usefulness of this command, I'll perform it in my ``demo`` directory. 
 
 Here's the ``demo`` folder structure::
    
-   ../demo/
+   demo
    ├── days.txt
    └── names.txt
 
@@ -93,8 +123,7 @@ My favourite arguments are:
     -rw-r--r-- 1 pi pi 176 Feb 26 19:27 names.txt
     -rw-r--r-- 1 pi pi  57 Feb 26 19:52 days.txt
     
-(Try using **--help** on the **ls** command to see available arguments)
-
+.. hint::Use **--help** on the **ls** command to see available arguments)
 
 3. grep
 =======
@@ -198,7 +227,7 @@ Usage
     Mark
 
 
-Bonus tip: you can write the resulting output of this command to a file using the redirect command **>**. This redirects the output from our cat command into a file, allnames.txt.
+.. tip:: You can write the resulting output of this command to a file using the redirect command **>**. This redirects the output from our cat command into a file, allnames.txt.
 
 .. code-block:: bash
    
@@ -292,8 +321,7 @@ Conversely, if we wanted the last 2 lines we can do:
 
 The alias command makes you do magic with less keystrokes! This command essentially allows you define a shortcut/a literal alias for any command/s. Think of it as a tinyurl for commands. Lets say your terminal had a magical command named thisisanimaginarycommandthatdoesmagic. Typing this command every time would eventually get boring and possibly annoying. Also, that's about 100 keystrokes. To spice up your terminal, you can create an alias for this command and call the alias in the terminal instead.
 
-Note: aliases created in this manner are temporary and only exist for this terminal session. 
-I'll share steps on making these permanent in another post.
+.. caution:: Aliases created in this manner are temporary and only exist for this terminal session. I'll share steps on making these permanent in another post.
 	
 Usage
 
@@ -391,12 +419,14 @@ Usage:
 
 If you're coming from a Windows background, you might be familiar with Windows Task Manager. I think of htop as the equivalent in Linux. This command launches an interactive process monitor that shows running processes and resource usage, and allows you to manage these processes. 
  
+.. tip:: To exit htop, press **q** on your keyboard
+
 12. pipe character |
 ====================
 
 The pipe character allows you to redirect output from one programm/command as input to another programm/command. 
 
-(usually on the same key as the \ character). This will give you the ability to 'chain' multiple commands. eg: grep + wc...search for a particular pattern then count the number of lines that matched.
+(usually on the same key as the \ character). This will give you the ability to 'chain' multiple commands. eg: **grep** + **wc**...search for a particular pattern then count the number of lines that matched.
 
 Here is an example of the pipe character in action:
 
@@ -458,4 +488,6 @@ You can use the jobs command to see a list of jobs and their statuses.
 Summary
 =======
 
-This is just a brief (unexhausted) list of commands 
+These are just a few of my favourite (and commonly used) commands in the Linux terminal. The possibilities are really endless. Learn to use these commands and you'll be on your way to becoming the next Linux ninja! Careful with that shuriken.
+
+What are your favourite commands?

@@ -62,7 +62,6 @@ xMENUITEMS = (('about', '/pages/about.html'),
 # Blogroll
 LINKS = (('resume', '/resume'),
          )
-         
 
 # Social widget
 
@@ -84,16 +83,25 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/desonalleyne'),
 #THEME = '/home/deson/pelican-themes/pelican-blue'
 #THEME = '/home/deson/pelican-themes/hyde'
 
-THEME = '/home/deson/pelican-themes/Flex'
+THEME = 'themes/Flex'
 THEME_COLOR = 'light'
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = False
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
-PYGMENTS_STYLE = "monokai"
 PYGMENTS_STYLE_DARK = 'monokai'
 PYGMENTS_STYLE = 'emacs'
+PYGMENTS_STYLE = "monokai"
+PYGMENTS_STYLE = "solarized-light"
+PYGMENTS_STYLE = "gruvbox-dark"
+PYGMENTS_STYLE = "native"
+PYGMENTS_STYLE = "solarized-light"
+PYGMENTS_STYLE = "gruvbox-dark"
+PYGMENTS_STYLE = "solarized-light"
+PYGMENTS_STYLE = "gruvbox-dark"
+PYGMENTS_STYLE = "native"
 
-#
+PLUGIN_PATHS = ['/home/deson/pelican-plugins']
+PLUGINS = ['extract_toc','post_stats']
 
 ## Flex theme config
 
@@ -125,9 +133,9 @@ ADD_THIS_ID = "ra-55adbb025d4f7e55"
 
 STATIC_PATHS = ["images", "extra/ads.txt", "extra/CNAME"]
 
-EXTRA_PATH_METADATA = {
-    "extra/ads.txt": {"path": "ads.txt"},
-    "extra/CNAME": {"path": "CNAME"},
-}
+#EXTRA_PATH_METADATA = {
+#    "extra/ads.txt": {"path": "ads.txt"},
+#    "extra/CNAME": {"path": "CNAME"},
+#}
 
 USE_LESS = True

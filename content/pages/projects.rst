@@ -8,6 +8,11 @@ Projects
 :category: programming
 :status: published
 
-My projects go here
-This page contains a list of my active projects
+You'll find my projects here. 
+
+I'm still writing. Check back later to learn how I:
+
+#. built a self-watering garden
+#. turn on and off my light switches without touching them
+#. accidentally broke time
 

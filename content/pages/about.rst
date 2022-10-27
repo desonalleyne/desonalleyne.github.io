@@ -6,9 +6,11 @@ About
 :summary: Who's Deson?
 :status: published
 
-Hello world. My name is Deson Alleyne. I'm a Software Developer living in Georgetown, Guyana. I studied Computer Science at the University of Guyana and earned my degree there. 
+Hello world. My name is Deson Alleyne. I'm a Software Developer living in Georgetown, Guyana. 
 
-Since graduating, I've been converting business requirements into applications in the telecoms industry, designing, developing, maintaining and supporting high-traffic applications and services used by thousands daily, and building APIs to bridge the gap between applications.
+After studying Computer Science at the University of Guyana I worked in the telecoms industry converting business requirements into applications. I gained experience designing, developing, maintaining and supporting high-traffic applications and services used by thousands of customers daily, and built APIs to allow communication between applications.
 
-When I'm not working, you might find me converting the light switches in my home to smart switches using arduino, or learning the F scale on my Yamaha PSR-79 musical keyboard.
+I shifted to the fintech space two years ago and today I am System Administrator at Mobile Money Guyana, Guyana's premier mobile financial system. There, I lead the technical team and oversee the development of new features in the platform.
+
+When I'm not working, you might find me converting the light switches in my home to smart switches using arduino, learning the F scale on my Yamaha PSR-79 musical keyboard or operating my CNC machine while my self-watering gardern waters itself.
 

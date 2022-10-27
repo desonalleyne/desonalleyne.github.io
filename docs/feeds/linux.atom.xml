@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deson Alleyne - linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2020-01-31T00:00:00-04:00</updated><subtitle>Software Developer | CNC Enthusiast | Tinkerer</subtitle><entry><title>Linux commands every Linux programmers should know</title><link href="/15_commands_every_linux_programmer_should_know.html" rel="alternate"></link><published>2020-01-31T00:00:00-04:00</published><updated>2020-01-31T00:00:00-04:00</updated><author><name>Deson Alleyne</name></author><id>tag:None,2020-01-31:/15_commands_every_linux_programmer_should_know.html</id><summary type="html">&lt;p class="first last"&gt;A list of linux commands&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="introduction"&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is just an introduction&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deson Alleyne - linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-01-01T00:00:00-04:00</updated><subtitle>Software Developer | CNC Enthusiast | Tinkerer</subtitle><entry><title>Linux commands every Linux programmer must know</title><link href="/commands_every_linux_programmer_must_know.html" rel="alternate"></link><published>2022-01-01T00:00:00-04:00</published><updated>2022-01-01T00:00:00-04:00</updated><author><name>Deson Alleyne</name></author><id>tag:None,2022-01-01:/commands_every_linux_programmer_must_know.html</id><summary type="html">&lt;p class="first last"&gt;Legend has it that using the terminal makes you a ninja 🥷 with superpowers. Here are Linux terminal commands every programmer must know.&lt;/p&gt;
+</summary><content type="html">&lt;!-- coment danger::
+attention::
+caution::
+error::
+hint::
+note::
+important::
+tip::
+warning:: --&gt;
+&lt;p&gt;Legend has it that using the terminal makes you a ninja with superpowers. Although it might appear to be a boring black window with not much going on, once you know how to use the terminal enough, it suddenly becomes your go-to tool when performing [most] tasks. The terminal (rather than a GUI application) gives you several benefits including speed, efficiency and ease of automation.&lt;/p&gt;
+&lt;p&gt;Here are Linux terminal commands every &lt;strike&gt; programmer &lt;/strike&gt; user must know.&lt;/p&gt;
+&lt;div class="admonition hint"&gt;
+&lt;p class="first admonition-title"&gt;Hint&lt;/p&gt;
+&lt;p class="last"&gt;In this article text in &lt;strong&gt;bold&lt;/strong&gt; refer to the actual command and blocks like the one below show the command being used in a terminal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ typeCommandHere
+&lt;/pre&gt;&lt;/div&gt;
 &lt;img alt="alternateText" src="/images/dima-pechurin-720X0NsgvfI-unsplash.jpg" style="width: 100%;" /&gt;
-&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@pechka?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Dima Pechurin&lt;/a&gt; on &lt;a href="/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div class="section" id="man-help"&gt;
+&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@pechka?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Dima Pechurin&lt;/a&gt; on &lt;a href="/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;div class="section" id="man-help"&gt;
 &lt;h2&gt;1.  man / help&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;man&lt;/strong&gt; (manual) and &lt;strong&gt;help&lt;/strong&gt; commands are probably the first two commands any Linux developer should know. The &lt;strong&gt;man&lt;/strong&gt; command provides description and usage details of virtually any command/application you can execute in the terminal. The help command is similar but provides a more concise information on the command. These two commands are called in slightly different ways.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;man&lt;/strong&gt;, preceeds the command or application you're looking up:&lt;/p&gt;
@@ -28,11 +41,11 @@ man &amp;lt;command&amp;gt;
 &lt;/div&gt;
 &lt;div class="section" id="ls"&gt;
 &lt;h2&gt;2. ls&lt;/h2&gt;
-&lt;p&gt;Unless you've got really good photographic memory and remember where every file and folder is, you'll need the &lt;strong&gt;ls&lt;/strong&gt; command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.&lt;/p&gt;
+&lt;p&gt;Unless you've got really good photographic memory and can recall where every file and folder is, you'll need the &lt;strong&gt;ls&lt;/strong&gt; command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.&lt;/p&gt;
 &lt;p&gt;To demonstrate the usefulness of this command, I'll perform it in my &lt;tt class="docutils literal"&gt;demo&lt;/tt&gt; directory.&lt;/p&gt;
 &lt;p&gt;Here's the &lt;tt class="docutils literal"&gt;demo&lt;/tt&gt; folder structure:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-../demo/
+demo
 ├── days.txt
 └── names.txt
 &lt;/pre&gt;
@@ -47,7 +60,7 @@ total &lt;span class="m"&gt;8&lt;/span&gt;.0K
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; pi pi &lt;span class="m"&gt;176&lt;/span&gt; Feb &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;19&lt;/span&gt;:27 names.txt
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; pi pi  &lt;span class="m"&gt;57&lt;/span&gt; Feb &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;19&lt;/span&gt;:52 days.txt
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;(Try using &lt;strong&gt;--help&lt;/strong&gt; on the &lt;strong&gt;ls&lt;/strong&gt; command to see available arguments)&lt;/p&gt;
+&lt;!-- hint::Use **- -help** on the **ls** command to see available arguments) --&gt;
 &lt;/div&gt;
 &lt;div class="section" id="grep"&gt;
 &lt;h2&gt;3. grep&lt;/h2&gt;
@@ -117,7 +130,10 @@ Mark
  John
  Mark
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Bonus tip: you can write the resulting output of this command to a file using the redirect command &lt;strong&gt;&amp;gt;&lt;/strong&gt;. This redirects the output from our cat command into a file, allnames.txt.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="first admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p class="last"&gt;You can write the resulting output of this command to a file using the redirect command &lt;strong&gt;&amp;gt;&lt;/strong&gt;. This redirects the output from our cat command into a file, allnames.txt.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat girls.txt boys.txt &amp;gt; allnames.txt
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -184,8 +200,10 @@ Christopher Barnwell,Guyana
 &lt;div class="section" id="alias"&gt;
 &lt;h2&gt;8. alias&lt;/h2&gt;
 &lt;p&gt;The alias command makes you do magic with less keystrokes! This command essentially allows you define a shortcut/a literal alias for any command/s. Think of it as a tinyurl for commands. Lets say your terminal had a magical command named thisisanimaginarycommandthatdoesmagic. Typing this command every time would eventually get boring and possibly annoying. Also, that's about 100 keystrokes. To spice up your terminal, you can create an alias for this command and call the alias in the terminal instead.&lt;/p&gt;
-&lt;p&gt;Note: aliases created in this manner are temporary and only exist for this terminal session.
-I'll share steps on making these permanent in another post.&lt;/p&gt;
+&lt;div class="admonition caution"&gt;
+&lt;p class="first admonition-title"&gt;Caution!&lt;/p&gt;
+&lt;p class="last"&gt;Aliases created in this manner are temporary and only exist for this terminal session. I'll share steps on making these permanent in another post.&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;Usage&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Creating an alias to echo a sentence to the screen&lt;/span&gt;
 &lt;span class="c1"&gt;# Note NO spaces between the = (equal) sign&lt;/span&gt;
@@ -249,11 +267,15 @@ $ wc -c names.csv
 &lt;div class="section" id="htop"&gt;
 &lt;h2&gt;11. htop&lt;/h2&gt;
 &lt;p&gt;If you're coming from a Windows background, you might be familiar with Windows Task Manager. I think of htop as the equivalent in Linux. This command launches an interactive process monitor that shows running processes and resource usage, and allows you to manage these processes.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="first admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p class="last"&gt;To exit htop, press &lt;strong&gt;q&lt;/strong&gt; on your keyboard&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="pipe-character"&gt;
 &lt;h2&gt;12. pipe character |&lt;/h2&gt;
 &lt;p&gt;The pipe character allows you to redirect output from one programm/command as input to another programm/command.&lt;/p&gt;
-&lt;p&gt;(usually on the same key as the character). This will give you the ability to 'chain' multiple commands. eg: grep + wc...search for a particular pattern then count the number of lines that matched.&lt;/p&gt;
+&lt;p&gt;(usually on the same key as the character). This will give you the ability to 'chain' multiple commands. eg: &lt;strong&gt;grep&lt;/strong&gt; + &lt;strong&gt;wc&lt;/strong&gt;...search for a particular pattern then count the number of lines that matched.&lt;/p&gt;
 &lt;p&gt;Here is an example of the pipe character in action:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# names.txt&lt;/span&gt;
 Name,Country
@@ -294,6 +316,7 @@ less names.txt&lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="summary"&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;This is just a brief (unexhausted) list of commands&lt;/p&gt;
+&lt;p&gt;These are just a few of my favourite (and commonly used) commands in the Linux terminal. The possibilities are really endless. Learn to use these commands and you'll be on your way to becoming the next Linux ninja! Careful with that shuriken.&lt;/p&gt;
+&lt;p&gt;What are your favourite commands?&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="linux"></category><category term="bash"></category><category term="terminal"></category><category term="commands"></category></entry></feed>

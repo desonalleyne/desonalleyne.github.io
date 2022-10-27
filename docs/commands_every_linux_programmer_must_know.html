@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+        disabled="disabled"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+            disabled="disabled"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/native.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#f00">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#f00">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#f00">
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deson Alleyne Atom">
+
+
+
+ 
+
+<meta name="author" content="Deson Alleyne" />
+<meta name="description" content="Legend has it that using the terminal makes you a ninja 🥷 with superpowers. Here are Linux terminal commands every programmer must know." />
+<meta name="keywords" content="bash, terminal, commands">
+
+
+  <meta property="og:site_name" content="Deson Alleyne"/>
+  <meta property="og:title" content="Linux commands every Linux programmer must know"/>
+  <meta property="og:description" content="Legend has it that using the terminal makes you a ninja 🥷 with superpowers. Here are Linux terminal commands every programmer must know."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/commands_every_linux_programmer_must_know.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-01-01 00:00:00-04:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/deson-alleyne.html">
+  <meta property="article:section" content="linux"/>
+  <meta property="article:tag" content="bash"/>
+  <meta property="article:tag" content="terminal"/>
+  <meta property="article:tag" content="commands"/>
+  <meta property="og:image" content="/images/avatar.jpg">
+
+  <title>Deson Alleyne &ndash; Linux commands every Linux programmer must know</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/images/avatar.jpg" alt="Deson Alleyne" title="Deson Alleyne">
+    </a>
+
+    <h1>
+      <a href="/">Deson Alleyne</a>
+    </h1>
+
+    <p>Software Developer | CNC Enthusiast | Tinkerer</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="/pages/projects.html">
+                Projects
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/resume" >resume</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/desonalleyne"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/desonalleyne"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+  <a href="/feeds/all.atom.xml">Atom</a>
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="commands_every_linux_programmer_must_know">Linux commands every Linux programmer must know</h1>
+    <p>
+      Posted on January 01, 2022 in <a href="/category/linux.html">linux</a>
+
+        &#8226; 8 min read
+    </p>
+  </header>
+
+
+
+  <div>
+    <!-- coment danger::
+attention::
+caution::
+error::
+hint::
+note::
+important::
+tip::
+warning:: -->
+<p>Legend has it that using the terminal makes you a ninja with superpowers. Although it might appear to be a boring black window with not much going on, once you know how to use the terminal enough, it suddenly becomes your go-to tool when performing [most] tasks. The terminal (rather than a GUI application) gives you several benefits including speed, efficiency and ease of automation.</p>
+<p>Here are Linux terminal commands every <strike> programmer </strike> user must know.</p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">In this article text in <strong>bold</strong> refer to the actual command and blocks like the one below show the command being used in a terminal.</p>
+</div>
+<div class="highlight"><pre><span></span>$ typeCommandHere
+</pre></div>
+<img alt="alternateText" src="/images/dima-pechurin-720X0NsgvfI-unsplash.jpg" style="width: 100%;" />
+<span>Photo by <a href="https://unsplash.com/@pechka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dima Pechurin</a> on <a href="/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><div class="section" id="man-help">
+<h2>1.  man / help</h2>
+<p>The <strong>man</strong> (manual) and <strong>help</strong> commands are probably the first two commands any Linux developer should know. The <strong>man</strong> command provides description and usage details of virtually any command/application you can execute in the terminal. The help command is similar but provides a more concise information on the command. These two commands are called in slightly different ways.</p>
+<p>The <strong>man</strong>, preceeds the command or application you're looking up:</p>
+<pre class="literal-block">
+man &lt;command&gt;
+</pre>
+<p>The <strong>--help</strong> follows the command you'd like help on:</p>
+<pre class="literal-block">
+&lt;command&gt; --help
+</pre>
+<p>Usage
+<strong>man</strong>:</p>
+<div class="highlight"><pre><span></span>$ man ls
+</pre></div>
+<p>You can navigate the manual using <tt class="docutils literal">j</tt> (scroll down) and <tt class="docutils literal">k</tt> (scroll up) or <tt class="docutils literal">d</tt> and <tt class="docutils literal">u</tt> for scrolling half page downward and upward respectively. To quit the manual, use <tt class="docutils literal">q</tt>.</p>
+<p><strong>help</strong> on the <tt class="docutils literal">ls</tt> command:</p>
+<div class="highlight"><pre><span></span>$ ls --help
+</pre></div>
+<p>This gives a brief (but often sufficient) indication of the arguments a command allow.</p>
+</div>
+<div class="section" id="ls">
+<h2>2. ls</h2>
+<p>Unless you've got really good photographic memory and can recall where every file and folder is, you'll need the <strong>ls</strong> command. This command lists information about files and directories and makes working in a non-GUI environment possible. To see possible arguments for this command, you can combine it with the help or man  commands from above.</p>
+<p>To demonstrate the usefulness of this command, I'll perform it in my <tt class="docutils literal">demo</tt> directory.</p>
+<p>Here's the <tt class="docutils literal">demo</tt> folder structure:</p>
+<pre class="literal-block">
+demo
+├── days.txt
+└── names.txt
+</pre>
+<p>Usage</p>
+<div class="highlight"><pre><span></span>$ ls
+days.txt  names.txt
+</pre></div>
+<p>This command has a host of possible arguments you can specify to determine how the results are displayed.</p>
+<p>My favourite arguments are:</p>
+<div class="highlight"><pre><span></span>$ ls -lrth
+total <span class="m">8</span>.0K
+-rw-r--r-- <span class="m">1</span> pi pi <span class="m">176</span> Feb <span class="m">26</span> <span class="m">19</span>:27 names.txt
+-rw-r--r-- <span class="m">1</span> pi pi  <span class="m">57</span> Feb <span class="m">26</span> <span class="m">19</span>:52 days.txt
+</pre></div>
+<!-- hint::Use **- -help** on the **ls** command to see available arguments) -->
+</div>
+<div class="section" id="grep">
+<h2>3. grep</h2>
+<p>This is probably one of most commonly used commands. Simply put, <strong>grep</strong> allows you to search. The cool thing is flexibility that the command provides via its arguments and options, and the fact that the search can be applied to virtually anything in the terminal.</p>
+<p>Lets say you wanted to search for all lines in a file containing the word 'Guyana'.</p>
+<p>You can achieve this by 'grepping' the file for the pattern 'Guyana'.</p>
+<div class="highlight"><pre><span></span><span class="c1"># names.txt</span>
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+<p>Usage:</p>
+<div class="highlight"><pre><span></span>$ grep Guyana name.txt
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Christopher Barnwell,Guyana
+</pre></div>
+<p>Note that this command doesn't just apply to files. [[ADD MORE WAYS HERE]]</p>
+</div>
+<div class="section" id="less">
+<h2>4. less</h2>
+<p>This command allows us to view contents of a file, or output from a command in a pager (a scrollable view). It is very useful for reading files with hundreds of lines (eg log file for an application) and even has built-in searching capability.
+The examples below demonstrate how to view contents of a file, and output of another command with the less command. Note: press the 'q' key to quit the pager and return to the terminal.</p>
+<div class="highlight"><pre><span></span><span class="c1"># names.txt</span>
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+<p>Usage</p>
+<div class="highlight"><pre><span></span>$ less names.txt
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+names.txt <span class="o">(</span>END<span class="o">)</span>
+</pre></div>
+<p>grep with less</p>
+<div class="highlight"><pre><span></span>grep Guyana names <span class="p">|</span> less
+</pre></div>
+</div>
+<div class="section" id="cat">
+<h2>5. cat</h2>
+<p>The cat command conCATenates files together and prints the results to standard output (your screen). In other words, if you needed to merge the contents of files, the cat command can do this. Since this command prints the content to standard output, I often use it when I quickly need to see what's in a file or to join files.</p>
+<div class="highlight"><pre><span></span><span class="c1"># girls.txt</span>
+Jane
+Mary
+
+<span class="c1"># boys.txt</span>
+John
+Mark
+</pre></div>
+<p>Usage</p>
+<div class="highlight"><pre><span></span>$ cat girls.txt boys.txt
+ Jane
+ Mary
+ John
+ Mark
+</pre></div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">You can write the resulting output of this command to a file using the redirect command <strong>&gt;</strong>. This redirects the output from our cat command into a file, allnames.txt.</p>
+</div>
+<div class="highlight"><pre><span></span>$ cat girls.txt boys.txt &gt; allnames.txt
+</pre></div>
+</div>
+<div class="section" id="cut">
+<h2>6. cut</h2>
+<p>This command does exactly it sounds like. It cuts the specified segment of each line in the file. Segments can be specified positionally i.e. from 5th character to 10 character, or by delimiters (a specified character). As with all the other commands, the --help flag and the manual are your friends.</p>
+<p>Usage:
+If you want to segment the file by a delimiter, use the -d flag and specify the delimiter. You'll also need to specify which fields should be returned using the -f argument and the segment(s) you want returnede.</p>
+<div class="highlight"><pre><span></span><span class="c1"># names.txt</span>
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+<p>To split the file into segments delimited by a , (comma) and return the 2nd field (countries), we can do the following:</p>
+<div class="highlight"><pre><span></span>$ cut -d <span class="s1">&#39;,&#39;</span> -f <span class="m">2</span> names.txt
+Country
+Trinidad <span class="p">&amp;</span> Tobago
+Guyana
+Guyana
+Jamaica
+Trinidad <span class="p">&amp;</span> Tobago
+Guyana
+</pre></div>
+<p>To split the file based on number of characters, we can use the -c argument and specify the position of the character(s) we want returned:</p>
+<div class="highlight"><pre><span></span>$ cut -c <span class="m">1</span>-5 names.txt
+Name,
+Brian
+Shivn
+Ramna
+Chris
+Darre
+Chris
+</pre></div>
+<p>What commands would you use to get the first name of each cricketer?</p>
+</div>
+<div class="section" id="head-and-tail">
+<h2>7. head and tail</h2>
+<p>No, we're not flipping a coin here. These two commands print content at the the top (head) or bottom (tail) of a file to screen. They come in very handy when I need to peek at a few lines in a file. By default they both show 10 lines, but you can change this behaviour using the arguments available.</p>
+<div class="highlight"><pre><span></span><span class="c1"># names.txt</span>
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+<p>If we wanted the first 3 lines in a file, we can do:</p>
+<div class="highlight"><pre><span></span>$ head -n <span class="m">3</span> names.txt
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+</pre></div>
+<p>Conversely, if we wanted the last 2 lines we can do:</p>
+<div class="highlight"><pre><span></span>$ tail -n <span class="m">2</span> names.txt
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+</div>
+<div class="section" id="alias">
+<h2>8. alias</h2>
+<p>The alias command makes you do magic with less keystrokes! This command essentially allows you define a shortcut/a literal alias for any command/s. Think of it as a tinyurl for commands. Lets say your terminal had a magical command named thisisanimaginarycommandthatdoesmagic. Typing this command every time would eventually get boring and possibly annoying. Also, that's about 100 keystrokes. To spice up your terminal, you can create an alias for this command and call the alias in the terminal instead.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution!</p>
+<p class="last">Aliases created in this manner are temporary and only exist for this terminal session. I'll share steps on making these permanent in another post.</p>
+</div>
+<p>Usage</p>
+<div class="highlight"><pre><span></span><span class="c1"># Creating an alias to echo a sentence to the screen</span>
+<span class="c1"># Note NO spaces between the = (equal) sign</span>
+$ <span class="nb">alias</span> <span class="nv">doMagic</span><span class="o">=</span><span class="s1">&#39;echo &quot;This Is An Imaginary Command That Does Magic&quot;&#39;</span>
+</pre></div>
+<div class="highlight"><pre><span></span><span class="c1"># using an alias</span>
+$ doMagic
+This Is An Imaginary Command That Does Magic
+</pre></div>
+<p>Whenever I call the <cite>doMagic</cite> alias, whatever is on the right hand side of the = (equal) sign is executed. In this case, it echoes &quot;This Is An Imaginary Command That Does Magic&quot; to the screen.</p>
+<p>It might seem trivial but if used smartly, this command <strong>WILL</strong> save you tons of time and keystrokes!</p>
+<p>Here's one of my favourites regarding the <cite>ls</cite> command. Try it out to see what it does:</p>
+<div class="highlight"><pre><span></span><span class="c1"># set ls command to display more details</span>
+$ <span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;ls -lrth&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="history">
+<h2>9. history</h2>
+<p>The history command displays a history of all the commands you've entered in the terminal.
+This command is especially useful when you're too lazy to retype a command you used in the past, or you want to see the timestamp you executed a particular command.</p>
+<p>By default, timestamp is not included in the results. Add the following line to your ~/.bashrc file to enable timestamps in the history command. You can add as many aliases to your ~/.bashrc file but you'll need to source it for any changes to apply.</p>
+<div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">HISTTIMEFORMAT</span><span class="o">=</span><span class="s2">&quot;%F %T&quot;</span>
+</pre></div>
+<p>Then execute the following in your terminal to apply the changes:</p>
+<div class="highlight"><pre><span></span><span class="nb">source</span> ~/.bashrc
+</pre></div>
+<p>Usage:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Here are the most recent commands I executed in my terminal</span>
+$ <span class="nb">history</span>
+...
+<span class="m">601</span>  <span class="m">2019</span>-12-27 <span class="m">21</span>:13:54 ls -lrth
+<span class="m">602</span>  <span class="m">2019</span>-12-27 <span class="m">21</span>:13:58 <span class="nb">cd</span>
+<span class="m">603</span>  <span class="m">2019</span>-12-27 <span class="m">21</span>:13:59 <span class="nb">pwd</span>
+<span class="m">604</span>  <span class="m">2019</span>-12-27 <span class="m">21</span>:14:01 ls
+<span class="m">605</span>  <span class="m">2019</span>-12-27 <span class="m">21</span>:14:03 <span class="nb">history</span>
+<span class="m">606</span>  <span class="m">2019</span>-12-27 <span class="m">21</span>:14:14 <span class="nb">fg</span>
+</pre></div>
+</div>
+<div class="section" id="wc">
+<h2>10. wc</h2>
+<p>This command counts characters, words, and lines in a file. This might come in handy if you're typing your 5000 word essay in the terminal and wondering if you hit the target.</p>
+<div class="highlight"><pre><span></span><span class="c1"># names.txt</span>
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+<p>Usage:</p>
+<div class="highlight"><pre><span></span><span class="c1"># count number of lines in names.csv</span>
+$ wc -l names.csv
+<span class="m">7</span> names.txt
+
+<span class="c1"># count number of characters in names.csv</span>
+$ wc -c names.csv
+<span class="m">176</span> names.txt
+</pre></div>
+</div>
+<div class="section" id="htop">
+<h2>11. htop</h2>
+<p>If you're coming from a Windows background, you might be familiar with Windows Task Manager. I think of htop as the equivalent in Linux. This command launches an interactive process monitor that shows running processes and resource usage, and allows you to manage these processes.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">To exit htop, press <strong>q</strong> on your keyboard</p>
+</div>
+</div>
+<div class="section" id="pipe-character">
+<h2>12. pipe character |</h2>
+<p>The pipe character allows you to redirect output from one programm/command as input to another programm/command.</p>
+<p>(usually on the same key as the character). This will give you the ability to 'chain' multiple commands. eg: <strong>grep</strong> + <strong>wc</strong>...search for a particular pattern then count the number of lines that matched.</p>
+<p>Here is an example of the pipe character in action:</p>
+<div class="highlight"><pre><span></span><span class="c1"># names.txt</span>
+Name,Country
+Brian Lara,Trinidad <span class="p">&amp;</span> Tobago
+Shivnarine Chanderpaul,Guyana
+Ramnaresh Sarwan,Guyana
+Chris Gayle,Jamaica
+Darren Bravo,Trinidad <span class="p">&amp;</span> Tobago
+Christopher Barnwell,Guyana
+</pre></div>
+<p>Usage:</p>
+<div class="highlight"><pre><span></span><span class="c1"># search for Guyana in names.txt and pipe output to wc</span>
+$ grep Guyana names.txt <span class="p">|</span> wc -l
+<span class="m">3</span>
+</pre></div>
+</div>
+<div class="section" id="bg-fg-jobs">
+<h2>13. bg, fg, jobs</h2>
+<p>These commands give you the ability to put processes (aka jobs) in the background (bg) or foreground (fg).
+Lets say you executed</p>
+<blockquote>
+less names.txt</blockquote>
+<p>but now you need to take a quick look at another file. You can move the <cite>less</cite> process to the background using the key combination <strong>Ctrl + z</strong></p>
+<p>After hitting the key combination you should see</p>
+<div class="highlight"><pre><span></span>$ less names.txt
+<span class="c1"># Ctrl + z pressed</span>
+<span class="o">[</span><span class="m">1</span><span class="o">]</span>+  Stopped                 less names.txt
+</pre></div>
+<p>The number in square brackets [1] identifies the job id. You'll need this if you want to bring the job back to the foreground</p>
+<div class="highlight"><pre><span></span>$ <span class="nb">fg</span> <span class="m">1</span>
+</pre></div>
+<p>This will bring the job with id <strong>1</strong> to the foreground.</p>
+<p>You can use the jobs command to see a list of jobs and their statuses.</p>
+<div class="highlight"><pre><span></span>$ <span class="nb">jobs</span>
+<span class="o">[</span><span class="m">1</span><span class="o">]</span>-  Stopped                 less names.txt
+<span class="o">[</span><span class="m">2</span><span class="o">]</span>+  Stopped                 less days.txt
+</pre></div>
+</div>
+<div class="section" id="summary">
+<h2>Summary</h2>
+<p>These are just a few of my favourite (and commonly used) commands in the Linux terminal. The possibilities are really endless. Learn to use these commands and you'll be on your way to becoming the next Linux ninja! Careful with that shuriken.</p>
+<p>What are your favourite commands?</p>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/bash.html">bash</a>
+      <a href="/tag/terminal.html">terminal</a>
+      <a href="/tag/commands.html">commands</a>
+    </p>
+  </div>
+
+  <div class="center social-share">
+    <p>Like this article? Share it with your friends!</p>
+    <div class="addthis_native_toolbox"></div>
+    <div class="addthis_sharing_toolbox"></div>
+    <div class="addthis_inline_share_toolbox"></div>
+  </div>
+
+
+    <div class="addthis_relatedposts_inline"></div>
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'deson-alleyne-1';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>
+  &copy; 2022  - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="False"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Deson Alleyne ",
+  "url" : "",
+  "image": "/images/avatar.jpg",
+  "description": "Just sharing my adventures..."
+}
+</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55adbb025d4f7e55" async="async"></script>
+
+</body>
+</html>
